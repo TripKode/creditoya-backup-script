@@ -1,0 +1,8 @@
+# Google Cloud Storage
+google-cloud-storage>=2.10.0
+
+# Progress bar
+tqdm>=4.65.0
+
+# Optional: Para manejar variables de entorno desde archivo .env
+python-dotenv>=1.0.0
