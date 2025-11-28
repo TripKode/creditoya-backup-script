@@ -42,9 +42,11 @@ logs/
 .env
 .env.local
 
-# Credentials - Ignorar archivos JSON en credentials, pero permitir .gitkeep
-credentials/*
-!credentials/.gitkeep
+# Credentials
+# NOTA: Los archivos JSON de credenciales ESTÁN PERMITIDOS porque el repo es privado
+# Si el repo se vuelve público, descomentar las líneas de abajo:
+# credentials/*
+# !credentials/.gitkeep
 
 # Temporary files
 temp/
