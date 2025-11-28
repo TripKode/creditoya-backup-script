@@ -43,10 +43,11 @@ logs/
 .env.local
 
 # Credentials
-# NOTA: Los archivos JSON de credenciales ESTÁN PERMITIDOS porque el repo es privado
-# Si el repo se vuelve público, descomentar las líneas de abajo:
-# credentials/*
-# !credentials/.gitkeep
+# NOTA: GitHub bloquea el push de credenciales incluso en repos privados (Push Protection)
+# Es mejor copiar el archivo directamente al servidor vía SCP
+credentials/*
+!credentials/.gitkeep
+!credentials/README.md
 
 # Temporary files
 temp/

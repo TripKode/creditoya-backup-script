@@ -30,17 +30,17 @@ def main():
         logger.info("=" * 60)
 
         # Opción 1: Cargar configuración desde variables de entorno
-        # settings = Settings.from_env()
+        settings = Settings.from_env()
 
-        # Opción 2: Configuración manual (descomentar y ajustar según necesites)
-        settings = Settings(
-            bucket_name="tu-bucket-name",
-            credentials_path="credentials/tu-credenciales.json",  # Opcional
-            source_folder="/u/uno",
-            gcs_folder_name="external_server_backup/uno_backup",
-            keep_temp=False,
-            log_level="INFO"
-        )
+        # Opción 2: Configuración manual (comentar Opción 1 y descomentar esto)
+        # settings = Settings(
+        #     bucket_name="tu-bucket-name",
+        #     credentials_path="credentials/tu-credenciales.json",
+        #     source_folder="/u/uno",
+        #     gcs_folder_name="external_server_backup/uno_backup",
+        #     keep_temp=False,
+        #     log_level="INFO"
+        # )
 
         # Crear instancia del uploader
         uploader = FolderUploader(settings=settings, logger=logger)
